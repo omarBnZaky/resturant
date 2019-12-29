@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+          <menu-container></menu-container>
                 </div>
             </div>
         </div>
