@@ -15,6 +15,13 @@ class CreateTablesTable extends Migration
     {
         Schema::create('tables', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('number')
+            $table->integer('status')
+            $table->unsignedInteger('resturant_id');
+
+            $table->foreign('resturant_id')
+                  ->references('id')->on('restaurants')
+                  ->onDelete('cascade');
             $table->timestamps();
         });
     }

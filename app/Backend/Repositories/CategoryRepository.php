@@ -9,7 +9,7 @@ class CategoryRepository
     /**
      * UserRepository constructor.
      */
-    public function __construct(User $categoryModel)
+    public function __construct(Category $categoryModel)
     {
         $this->categoryModel = $categoryModel->newQuery();
     }
