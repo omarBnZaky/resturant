@@ -43,6 +43,10 @@ class CategoryRepository
         return $this->categoryModel->first();
     }
 
+    public function WithRelation(string $relation)
+    {
+        return $this->categoryModel->with($relation);
+    }
     public function getCategory()
     {
         return $this->categoryModel->get();
